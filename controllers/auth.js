@@ -207,7 +207,7 @@ exports.postReset = (req, res, next)=>{
         subject: 'Reset Password For E-Commerce App Node JS',
         html: `
         <p>You requested for a password reset</p>
-        <p>Click this <a href = "https://ecommerce-app-node-3mte.onrender.com/reset/${token}">link</a> to reset your password</p> 
+        <p>Click this <a href = "${window.location.origin}/reset/${token}">link</a> to reset your password</p> 
         `
         // We will look for the token above in the database to confirm that this link was sent by us.
       })
